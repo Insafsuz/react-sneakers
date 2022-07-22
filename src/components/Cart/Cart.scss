@@ -1,0 +1,129 @@
+.cart {
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  &__content {
+    width: 385px;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    padding: 30px;
+  }
+}
+
+.content-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__sneakers {
+  }
+}
+
+.sneakers-cart {
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    margin: 0px 0px 30px 0px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    padding: 20px 20px 30px 20px;
+    &:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+}
+.item-sneakers {
+  &__img {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    margin-right: 20px;
+  }
+  &__text {
+    p {
+      max-width: 150px;
+      margin: 0px 12px 8px 0px;
+      line-height: 17px;
+      color: #000000;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+.item-sneakers {
+  &__btn {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 23px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #b5b5b5;
+    transition: color 0.3s ease, border 0.3s ease;
+    &:hover {
+      color: #a11010;
+      border: 1px solid #a11010;
+    }
+  }
+}
+
+.info-cart {
+  &__list {
+  }
+  &__btn {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    font-size: 19px;
+    color: #fff;
+    padding: 18px 0;
+    background-color: #9dd558;
+    border-radius: 18px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .arrow-r {
+      font-size: 30px;
+      position: absolute;
+      right: 33px;
+    }
+  }
+}
+.list-cart {
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 0px 20px 0px;
+    span {
+      font-size: 16px;
+      color: #000;
+    }
+    div {
+      flex: 1;
+      border: 1px dashed #dfdfdf;
+      margin: 0px 9px;
+      transform: translate(0, -4px);
+    }
+  }
+}

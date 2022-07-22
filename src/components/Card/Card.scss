@@ -1,0 +1,54 @@
+.card {
+  border: 1px solid #f3f3f3;
+  border-radius: 40px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  &:hover {
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+    transform: translateY(-10px);
+  }
+  &__wrapper {
+    padding: 20px 29px 33px 33px;
+  }
+  &__img {
+    width: 133px;
+    height: 112px;
+    background-color: greenyellow;
+    margin: 0px 0px 14px 0px;
+  }
+  &__text {
+    line-height: 17px;
+    color: #000;
+    margin: 0px 0px 14px 0px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer-card {
+  &__text {
+    span {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+      color: #bdbdbd;
+    }
+    b {
+      display: block;
+    }
+  }
+}
+.footer-card {
+  &__button {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    color: #d3d3d3;
+    font-size: 14px;
+  }
+}

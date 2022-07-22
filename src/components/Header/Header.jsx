@@ -21,7 +21,7 @@ const Header = () => {
             <span>1205 руб</span>
           </li>
           <li className='actions-header__item '>
-            <FaRegHeart />
+            <FaRegHeart className='heart' />
           </li>
           <li className='actions-header__item'>
             <CgProfile />
