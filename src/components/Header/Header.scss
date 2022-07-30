@@ -21,9 +21,10 @@
   display: flex;
   align-items: center;
   &__img {
-    width: 40px;
+    width: 60px;
     height: 40px;
     margin-right: 16px;
+    transform: rotate(345deg);
   }
   &__main {
   }

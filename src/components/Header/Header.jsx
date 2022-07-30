@@ -1,5 +1,5 @@
 import './Header.scss'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.jpg'
 import { FiShoppingCart } from 'react-icons/fi'
 import { FaRegHeart } from 'react-icons/fa'
 import { CgProfile } from 'react-icons/cg'
