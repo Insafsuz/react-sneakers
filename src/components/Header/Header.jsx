@@ -11,7 +11,7 @@ const Header = () => {
         <div className='header__logo logo'>
           <img className='logo__img' src={logo} alt='logo'></img>
           <div className='logo__main'>
-            <h3 className='logo__title'>React Sneakers</h3>
+            <h3 className='logo__title'>Kasp Sneakers</h3>
             <span className='logo__subtitle'>Магазин лучших кроссовок</span>
           </div>
         </div>

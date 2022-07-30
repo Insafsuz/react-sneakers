@@ -1,7 +1,18 @@
+import { useEffect, useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import { Card, Cart, Header } from './components'
 
 function App() {
+  const [items, setItems] = useState([])
+
+  useEffect(() => {
+    fetch('https://62e51da8c6b56b45118f4462.mockapi.io/items')
+      .then(res => res.json())
+      .then(json => setItems(json))
+  }, [])
+
+  console.log(items)
+
   return (
     <div className='wrapper'>
       <Header />
@@ -18,17 +29,13 @@ function App() {
               </form>
             </div>
             <div className='sneakers__items '>
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              {items.map(item => (
+                <Card key={item.id} item={item} />
+              ))}
             </div>
           </div>
         </section>
       </main>
-      <Cart />
     </div>
   )
 }
